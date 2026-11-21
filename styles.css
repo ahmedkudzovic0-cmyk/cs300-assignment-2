@@ -300,7 +300,49 @@ a:focus-visible {
    read comfortably. At 640px the nav fits on one row, so it turns
    horizontal, and the cards move to two columns.
    ============================================================ */
+@media (min-width: 640px) {
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  .nav-list {
+    flex-direction: row;
+    gap: 0.25rem;
+  }
+
+  .nav-list a { padding: 0.5rem 0.6rem; }
+
+  .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ============================================================
+   Breakpoint 2 — 960px
+   At 960px there is room for a third card column, so the two-column
+   grid stops wasting space. (The side-by-side About rules in this
+   block were added in the improvement commit — see the template.)
+   ============================================================ */
+@media (min-width: 960px) {
+  .card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  .hero-inner { padding-block: 4.5rem; }
+
+  .sessions,
+  .about { padding-block: 4rem; }
+
+  /* Improvement: at 960px the About image sat above the text and pushed the
+     details below the fold, so image and text now sit side by side. */
+  .about-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about-image { flex: 1 1 45%; }
+
+  .about-text { flex: 1 1 55%; min-width: 0; }
+}
 
 /* Respect a visitor's reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
