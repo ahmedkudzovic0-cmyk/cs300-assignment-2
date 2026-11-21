@@ -333,17 +333,7 @@ a:focus-visible {
 
   /* Improvement: at 960px the About image sat above the text and pushed the
      details below the fold, so image and text now sit side by side. */
-  .about-inner {
-    flex-direction: row;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .about-image { flex: 1 1 45%; }
-
-  .about-text { flex: 1 1 55%; min-width: 0; }
-}
-
+  
 /* Respect a visitor's reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
   *,
