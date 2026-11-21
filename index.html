@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>River Workshop — Build a readable page, one step at a time</title>
+  <meta name="description" content="River Workshop is a fictional community workshop offering short practice sessions in HTML, CSS, and keyboard usability.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- 1. Header and navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="#overview">River Workshop</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#sessions">Sessions</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 2. Hero -->
+    <section class="hero" id="overview" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <p class="eyebrow">Community workshop &middot; Fall 2026</p>
+        <h1 id="hero-heading">Build a readable page, one step at a time.</h1>
+        <p class="hero-text">
+          Our fictional community workshop offers short practice sessions in HTML,
+          CSS, and keyboard usability.
+        </p>
+        <a class="button" href="#sessions">Explore the sessions</a>
+      </div>
+    </section>
+
+    <!-- 3. Features or services -->
+    <section class="sessions" id="sessions" aria-labelledby="sessions-heading">
+      <div class="container">
+        <h2 id="sessions-heading">Practice sessions</h2>
+        <p class="section-intro">
+          Three short sessions. Each one ends with a checklist you can repeat at home.
+        </p>
+        <ul class="card-grid">
+          <li class="card">
+            <h3>HTML Foundations</h3>
+            <p>Organize meaningful content with the right elements.</p>
+          </li>
+          <li class="card">
+            <h3>Responsive CSS</h3>
+            <p>Adapt layouts to the space available.</p>
+          </li>
+          <li class="card">
+            <h3>Keyboard Checks</h3>
+            <p>Follow every link with visible focus.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Content section: About -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container about-inner">
+        <img class="about-image"
+             src="images/practice-book.svg"
+             alt="Illustration of an open practice book beside a checklist of workshop steps."
+             width="640" height="420">
+        <div class="about-text">
+          <h2 id="about-heading">About the workshop</h2>
+          <p>
+            Bring your curiosity and a small practice idea. Each session uses fictional
+            content and a checklist you can repeat.
+          </p>
+          <dl class="details">
+            <dt>Date</dt>
+            <dd>Saturday, October 24, 2026</dd>
+            <dt>Time</dt>
+            <dd>10:00 AM to noon</dd>
+            <dt>Location</dt>
+            <dd>Fictional River Learning Room</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 5. Footer -->
+  <footer class="site-footer" id="contact">
+    <h2 class="visually-hidden">Contact and site links</h2>
+    <div class="container footer-inner">
+      <nav aria-label="Footer">
+        <ul class="footer-list">
+          <li><a href="#overview">Back to top</a></li>
+          <li><a href="#sessions">Sessions</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML reference</a></li>
+        </ul>
+      </nav>
+      <p>Contact: <a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p class="copyright">Copyright 2026 River Workshop. Fictional practice site.</p>
+    </div>
+  </footer>
+</body>
+</html>
